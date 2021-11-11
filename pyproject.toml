@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "project_template"
+version = "0.1.0"
+description = "A Boilerplate template for starting FTD django projects with dependancies and settings configured"
+authors = ["shanaka11 <shanakaabeysinghe@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^3.2.9"
+djangorestframework = "^3.12.4"
+django-environ = "^0.8.1"
+django-cors-headers = "^3.10.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
