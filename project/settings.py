@@ -158,8 +158,10 @@ EMAIL_HOST_PASSWORD= env('EMAIL_HOST_PASSWORD')
 EMAIL_PORT= env('EMAIL_PORT')
 EMAIL_USE_TLS= env('EMAIL_USE_TLS')
 
+# FTD Auth Settings
+FTD_AUTH = {
 # Server Details
-C_SERVER_URL = env('SERVER_URL')
-
+'C_SERVER_URL' : env('SERVER_URL'),
 # Client Details
-C_CLIENT_URL = env('CLIENT_URL')
+'C_CLIENT_URL': env('CLIENT_URL')
+}
