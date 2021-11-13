@@ -16,6 +16,7 @@ Django = "^3.2.9"
 djangorestframework = "^3.12.4"
 django-environ = "^0.8.1"
 django-cors-headers = "^3.10.0"
+ftd-auth = "^0.1.0"
 
 [tool.poetry.dev-dependencies]
 
