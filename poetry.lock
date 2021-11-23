@@ -9,11 +9,6 @@ python-versions = ">=3.6"
 [package.extras]
 tests = ["pytest", "pytest-asyncio", "mypy (>=0.800)"]
 
-[package.source]
-type = "legacy"
-url = "https://test-repo-777170128162.d.codeartifact.us-east-2.amazonaws.com/pypi/ftd-repo/simple"
-reference = "ftd"
-
 [[package]]
 name = "django"
 version = "3.2.9"
@@ -31,11 +26,6 @@ sqlparse = ">=0.2.2"
 argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
-[package.source]
-type = "legacy"
-url = "https://test-repo-777170128162.d.codeartifact.us-east-2.amazonaws.com/pypi/ftd-repo/simple"
-reference = "ftd"
-
 [[package]]
 name = "django-cors-headers"
 version = "3.10.0"
@@ -46,11 +36,6 @@ python-versions = ">=3.6"
 
 [package.dependencies]
 Django = ">=2.2"
-
-[package.source]
-type = "legacy"
-url = "https://test-repo-777170128162.d.codeartifact.us-east-2.amazonaws.com/pypi/ftd-repo/simple"
-reference = "ftd"
 
 [[package]]
 name = "django-environ"
@@ -65,10 +50,16 @@ develop = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)", "furo (>=2021.8.17b4
 docs = ["furo (>=2021.8.17b43,<2021.9.0)", "sphinx (>=3.5.0)", "sphinx-notfound-page"]
 testing = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)"]
 
-[package.source]
-type = "legacy"
-url = "https://test-repo-777170128162.d.codeartifact.us-east-2.amazonaws.com/pypi/ftd-repo/simple"
-reference = "ftd"
+[[package]]
+name = "django-filter"
+version = "21.1"
+description = "Django-filter is a reusable Django application for allowing users to filter querysets dynamically."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+Django = ">=2.2"
 
 [[package]]
 name = "djangorestframework"
@@ -81,11 +72,6 @@ python-versions = ">=3.5"
 [package.dependencies]
 django = ">=2.2"
 
-[package.source]
-type = "legacy"
-url = "https://test-repo-777170128162.d.codeartifact.us-east-2.amazonaws.com/pypi/ftd-repo/simple"
-reference = "ftd"
-
 [[package]]
 name = "pytz"
 version = "2021.3"
@@ -93,11 +79,6 @@ description = "World timezone definitions, modern and historical"
 category = "main"
 optional = false
 python-versions = "*"
-
-[package.source]
-type = "legacy"
-url = "https://test-repo-777170128162.d.codeartifact.us-east-2.amazonaws.com/pypi/ftd-repo/simple"
-reference = "ftd"
 
 [[package]]
 name = "sqlparse"
@@ -107,15 +88,10 @@ category = "main"
 optional = false
 python-versions = ">=3.5"
 
-[package.source]
-type = "legacy"
-url = "https://test-repo-777170128162.d.codeartifact.us-east-2.amazonaws.com/pypi/ftd-repo/simple"
-reference = "ftd"
-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "2420ef22cf135e46e1ec8bf955bdb828eaca91e017823c1937137c5e951ad188"
+content-hash = "a60f35657e0c39e2d25da73c035efb061aea7a8843e91fafeedabecf715a5459"
 
 [metadata.files]
 asgiref = [
@@ -133,6 +109,10 @@ django-cors-headers = [
 django-environ = [
     {file = "django-environ-0.8.1.tar.gz", hash = "sha256:6f0bc902b43891656b20486938cba0861dc62892784a44919170719572a534cb"},
     {file = "django_environ-0.8.1-py2.py3-none-any.whl", hash = "sha256:42593bee519a527602a467c7b682aee1a051c2597f98c45f4f4f44169ecdb6e5"},
+]
+django-filter = [
+    {file = "django-filter-21.1.tar.gz", hash = "sha256:632a251fa8f1aadb4b8cceff932bb52fe2f826dd7dfe7f3eac40e5c463d6836e"},
+    {file = "django_filter-21.1-py3-none-any.whl", hash = "sha256:f4a6737a30104c98d2e2a5fb93043f36dd7978e0c7ddc92f5998e85433ea5063"},
 ]
 djangorestframework = [
     {file = "djangorestframework-3.12.4-py3-none-any.whl", hash = "sha256:6d1d59f623a5ad0509fe0d6bfe93cbdfe17b8116ebc8eda86d45f6e16e819aaf"},
