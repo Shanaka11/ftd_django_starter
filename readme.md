@@ -6,6 +6,7 @@ You can use familiar Django commands as shown below
     - "poetry run python manage.py runserver"
 
 Or
+
     - Type "poetry shell" to enter the venv
     - Then you can type commands like "python manage.py runserver"
 
