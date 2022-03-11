@@ -5,11 +5,11 @@ description = "A Boilerplate template for starting FTD django projects with depe
 authors = ["shanaka11 <shanakaabeysinghe@gmail.com>"]
 license = "MIT"
 
-
-[[tool.poetry.source]]
-name = "ftd"
-url = "https://test-repo-777170128162.d.codeartifact.us-east-2.amazonaws.com/pypi/ftd-repo/simple"
-secondary = true
+#Uncomment below lines to connect the private repo
+#[[tool.poetry.source]]
+#name = "ftd"
+#url = "https://test-repo-777170128162.d.codeartifact.us-east-2.amazonaws.com/pypi/ftd-repo/simple"
+#secondary = true
 
 [tool.poetry.dependencies]
 python = "^3.9"
