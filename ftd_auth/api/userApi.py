@@ -5,7 +5,6 @@ import traceback
 # Django
 from django.core.mail import EmailMultiAlternatives
 from django.contrib.auth.models import User
-from rest_framework import serializers
 # from django.conf import settings
 # from ..settings import api_settings as settings # App Specific Settings
 from django.conf import settings as proj_settings # Project Specific Settings
@@ -30,6 +29,7 @@ class RefreshLogin(TokenRefreshView):
 @permission_classes([AllowAny])
 class Login(TokenObtainPairView):
     serializer_class = LoginSerializer
+
 
 # Create User
 @api_view(['POST'])
@@ -95,7 +95,7 @@ def VerifyEmail(request, user_id=None, token=None):
         return Response({"message": str(e)})
 
 # Remove / Deactivate User
-@api_view(['POST'])
+@api_view(['DELETE'])
 @permission_classes([IsAdminUser])
 def RemoveUser(request, user_id):
     try:
